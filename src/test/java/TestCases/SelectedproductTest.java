@@ -50,8 +50,8 @@ public class SelectedproductTest extends BaseClass {
         LocalDate datePlusTwo = currentDate.plusDays(2);
 
         // Step 3: Format the current date (date + 2 days) to match the retrieved format
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, dd MMMM");
-        String formattedCurrentDatePlusTwo = datePlusTwo.format(formatter);
+        DateTimeFormatter formatterdate = DateTimeFormatter.ofPattern("EEEE, dd MMMM");
+        String formattedCurrentDatePlusTwo = datePlusTwo.format(formatterdate);
 
         // Step 4: Compare the dates
         if (retrievedDateString.equals(formattedCurrentDatePlusTwo)&& bestsellerString.equalsIgnoreCase("#1 Best Seller")) 
